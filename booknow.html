@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNow</title>
+    <link rel="stylesheet" href="booknow.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="logo/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="nav-bar-1">
+        <img src="logo/logo.jpg" alt="kingsukh">
+        <div class="navigation-bar">
+            <p><a href="index.html">Home</a></p>
+            <p><a href="index.html #logo-kingsukh">About</a></p>
+            <p><a href="index.html #service-link">Service</a></p>
+            <p><a href="index.html #living-room-link">Rooms</a></p>
+            <p><a href="gallery.html">Gallery</a></p>
+            <p><a href="contact.html">Contact</a></p>
+            <div class="nav-icon" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeNav()">
+            <i class="fa-solid fa-x" style="color: #4400ff;"></i>
+        </p>
+
+        <p class="side-navbar-links"><a href="index.html">Home</a></p>
+        <p class="side-navbar-links"><a href="index.html #logo-kingsukh">About</a></p>
+        <p class="side-navbar-links"><a href="index.html #service-link">Service</a></p>
+        <p class="side-navbar-links"><a href="index.html #living-room-link">Rooms</a></p>
+        <p class="side-navbar-links"><a href="gallery.html">Gallery</a></p>
+        <p class="side-navbar-links"><a href="contact.html">Contact</a></p>
+
+    </div>
+
+    <div class="booking">
+        <h2>Book Now</h2>
+        <div class="box">
+            <div class="box-1">
+                <form id="booking-form">
+                    <table class="tables">
+                        <tr>
+                            <td>Name:</td>
+                            <td><input type="text" placeholder="Enter your name" class="name" name="name"
+                                    id="booking-name"></td>
+                        </tr>
+                        <tr>
+                            <td>Phone number: </td>
+                            <td><input type="number" name="number" id="phone" class="number"
+                                    placeholder="Enter your phone number"></td>
+                        </tr>
+                        <tr>
+                            <td>Email:</td>
+                            <td><input type="email" name="email" id="booking-email" class="email"
+                                    placeholder="Enter your email"></td>
+                        </tr>
+                        <tr>
+                            <td>Check-in:</td>
+                            <td><input type="date" placeholder="Check-in" class="check-in" name="checkin" id="checkin">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Check-out:</td>
+                            <td><input type="date" placeholder="Check-out" class="check-out" name="checkout"
+                                    id="checkout"></td>
+                        </tr>
+                        <tr>
+                            <td>Adults:</td>
+                            <td><input type="number" placeholder="No. of Adult" class="adult" name="adult" id="adults">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Childs:</td>
+                            <td><input type="number" placeholder="No. of Childs" class="child" name="child" id="childs">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Rooms:</td>
+                            <td><input type="number" placeholder="No. of Rooms" class="rooms" name="room" id="room">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <button type="button" onclick="sendWhatsAppMessage()">Book Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h4>About Us</h4>
+                <p>Kingsukh Guest House offers a comfortable stay with all modern amenities. Conveniently located and
+                    beautifully furnished.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html #living-room-link">Rooms</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="booknow.html">Book Now</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Address:</strong>Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+                <p><strong>Phone:</strong> +91 9007062180 </p>
+                <p><strong>Email:</strong> kkghosh0099@gmail.com</p>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/kingsukhguesthouse/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Kingsukh Guest House. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="index.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+
+    ScrollReveal().reveal('.nav-bar-1', {
+        duration: 1000,
+        origin: 'top',
+        distance: '50px'
+    });
+
+
+    ScrollReveal().reveal('.booking h2', {
+        duration: 1200,
+        origin: 'left',
+        distance: '100px'
+    });
+
+    ScrollReveal().reveal('.box', {
+        duration: 1200,
+        origin: 'right',
+        distance: '100px',
+        delay: 200
+    });
+
+
+    ScrollReveal().reveal('.footer-container', {
+        duration: 1500,
+        origin: 'bottom',
+        distance: '50px',
+        delay: 300
+    });
+
+
+    ScrollReveal().reveal('.tables tr', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '50px',
+        interval: 200
+    });
+
+    ScrollReveal().reveal('button[type="button"]', {
+        duration: 1200,
+        origin: 'bottom',
+        distance: '50px',
+        delay: 500
+    });
+
+</script>
+
+</html>

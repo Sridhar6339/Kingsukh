@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: poppins;
+    background-color: black;
+}
+
+.nav-bar-1 {
+    display: flex;
+    margin: 20px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(255, 255, 255, 0.45) 0px 25px 20px -20px;
+}
+
+.nav-bar-1 img {
+    width: 100px;
+    height: 100px;
+}
+
+
+.navigation-bar {
+    display: flex;
+    color: white;
+    padding-right: 40px;
+    column-gap: 20px;
+}
+
+.navigation-bar p {
+    display: flex;
+}
+
+.navigation-bar p a {
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.navigation-bar p a:hover {
+    text-decoration: underline;
+    color: cyan;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.side-navbar {
+    background-color: white;
+    color: black;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    padding: 40px;
+    transition: 1.5s;
+}
+
+.side-navbar-links {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.side-navbar-links a:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+.booking {
+    padding-bottom: 50px;
+}
+
+.booking h2 {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    text-shadow: 3px 0px 4px rgba(117, 128, 2, 1);
+}
+
+.box {
+    height: 480px;
+    width: 50%;
+    background-color: white;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0px 0px 10px 10px #ffffff;
+    margin-top: 20px;
+  }
+  
+  .box-1 {
+    height: 480px;
+    width: 100%;
+    background-color: black;
+    margin: auto;
+    color: white;
+  }
+  
+  .tables {
+    padding-top: 20px;
+    margin: auto;
+  }
+  
+  .tables tr td {
+    padding-bottom: 15px;
+  
+  }
+  
+    .box-1 button {
+      color: #141313;
+      background-color: cyan;
+      height: 30px;
+      width: 100px;
+      border-bottom-right-radius: 10px;
+      border-top-left-radius: 10px;
+      font-weight: bold;
+      position: absolute;
+      left: 48%;
+  
+    }
+  
+  .adult,
+  .child,
+  .rooms,.name,.number,.email {
+    position: relative;
+    width: 100%;
+    padding: 4px 6px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .check-in,
+  .check-out {
+    position: relative;
+    width: 100%;
+    padding: 4px 6px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: #fff;
+    box-shadow: none;
+    outline: none;
+    color-scheme: dark;
+  }
+
+  footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 50px 36px -28px inset;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-container>div {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px 0;
+  }
+  
+  .footer-about p,
+  .footer-contact p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-links ul li a:hover {
+    text-decoration: underline;
+    color: aqua;
+  }
+  
+  .footer-social ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-social h4,
+  .footer-contact h4,
+  .footer-links h4,
+  .footer-about h4 {
+    color: #FF0000;
+    padding-bottom: 15px;
+    font-size: larger;
+    text-shadow: 1px 0px 1px rgba(255, 255, 255, 1);
+  }
+  
+  .footer-social ul li {
+    margin: 0 10px;
+  }
+  
+  .footer-social ul li a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    padding: 20px 0;
+    margin-top: 2 0px;
+    font-size: 14px;
+  }
+
+
+@media screen and (max-width: 768px) {
+    
+    .nav-icon {
+        display: block;
+    }
+
+    .navigation-bar p a {
+        display: none;
+    }
+
+    .box {
+        width: 80%; 
+        margin-top: 10px;
+        background-color: black;
+    }
+
+    .box-1 button {
+        left: 35%;
+    }
+
+    .tables {
+        width: 100%;
+    }
+
+    .tables tr td {
+        padding-bottom: 10px;
+    }
+
+    .adult,
+    .child,
+    .rooms,
+    .name,
+    .number,
+    .email {
+        font-size: 1em; /* Reduce font size for input fields */
+        border-radius: 20px; /* Adjust border-radius for smaller devices */
+    }
+
+    .check-in,
+    .check-out {
+        font-size: 1em; /* Reduce font size for date input fields */
+        border-radius: 20px; /* Adjust border-radius for smaller devices */
+    }
+
+    h2 {
+        font-size: 28px; /* Reduce the font size of the heading */
+    }
+
+}
